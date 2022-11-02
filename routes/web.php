@@ -23,3 +23,9 @@ Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->nam
 // Rotas para alterar planos
 Route::post('/admin/planos/store', [App\Http\Controllers\InformacoesController::class, 'storePlanos'])->name('admin.alterarInfos.storePlanos');
 Route::put('/admin/planos/update', [App\Http\Controllers\InformacoesController::class, 'updatePlanos'])->name('admin.alterarInfos.updatePlanos');
+
+// Rotas para alterar a equipe
+Route::post('/admin/equipe/store', [App\Http\Controllers\InformacoesController::class, 'storeMembros'])->name('membros.store');
+Route::put('/admin/equipe/{membro}', [App\Http\Controllers\InformacoesController::class, 'updateMembros'])->name('membros.update');
+Route::delete('/admin/equipe/{membro}', [App\Http\Controllers\InformacoesController::class, 'destroyMembros'])->name('membros.destroy');
+

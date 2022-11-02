@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Plano;
+use App\Models\Membro;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class IndexController extends Controller
 {
@@ -20,7 +22,10 @@ class IndexController extends Controller
         $plano3 = Plano::select('pl_plano3')->first();
         $plano4 = Plano::select('pl_plano4')->first();
 
+        $membros = Membro::latest()->paginate(4);
+
         return view('index', [
+            'membros' => $membros,
             'plano' => $plano,
             'plano1' => $plano1,
             'plano2' => $plano2,
@@ -37,7 +42,10 @@ class IndexController extends Controller
         $plano3 = Plano::select('pl_plano3')->first();
         $plano4 = Plano::select('pl_plano4')->first();
 
+        $membros = Membro::latest()->paginate(4);
+
         return view('indexEUA', [
+            'membros' => $membros,
             'plano' => $plano,
             'plano1' => $plano1,
             'plano2' => $plano2,

@@ -128,12 +128,14 @@
     <section class="team">
         <div class="container-team">
             <div class="row-team">
+
+                @foreach ($membros as $membro)
                 <div class="column">
                     <div class="imgBox">
-                        <img src="{{asset('images/team/Gustavo.png')}}">
+                        <img src="{{asset('images/membros/' . $membro->mem_foto)}}">
                     </div>
                     <div class="details">
-                        <h3>Gustavo<br><span>Profissional de Ed. Física</span></h3>
+                        <h3>{{$membro->mem_nome}}<br><span>{{$membro->mem_cargo}}</span></h3>
                         <ul>
                             <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
@@ -141,45 +143,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="imgBox">
-                        <img src="{{asset('images/team/Fran.png')}}">
-                    </div>
-                    <div class="details">
-                        <h3>Fran<br><span>Profissional de Ed. Física</span></h3>
-                        <ul>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="imgBox">
-                        <img src="{{asset('images/team/Elias.png')}}">
-                    </div>
-                    <div class="details">
-                        <h3>Elias<br><span>Profissional de Ed. Física</span></h3>
-                        <ul>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="imgBox">
-                        <img src="{{asset('images/team/Camila.png')}}">
-                    </div>
-                    <div class="details">
-                        <h3>Camila<br><span>Administradora</span></h3>
-                        <ul>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                @endforeach
                 <div style="clear: both;"></div>
             </div>
         </div>

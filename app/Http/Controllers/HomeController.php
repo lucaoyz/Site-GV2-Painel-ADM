@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Plano;
+use App\Models\Membro;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -30,7 +32,10 @@ class HomeController extends Controller
         $plano3 = Plano::select('pl_plano3')->first();
         $plano4 = Plano::select('pl_plano4')->first();
 
+        $membros = Membro::latest()->get();
+
         return view('menu.admin', [
+            'membros' => $membros,
             'plano' => $plano,
             'plano1' => $plano1,
             'plano2' => $plano2,
