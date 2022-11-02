@@ -20,20 +20,20 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{asset('css/base.css')}}">
+    <link rel="stylesheet" href="{{asset('css/vendor.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="{{asset('js/modernizr.js')}}"></script>
+    <script src="{{asset('js/pace.min.js')}}"></script>
     <script src="https://kit.fontawesome.com/ea50c2066e.js" crossorigin="anonymous"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="images/ICO GV2.ico" type="image/x-icon">
-    <link rel="icon" href="images/ICO GV2.ico" type="image/x-icon">
+    <link rel="halter" sizes="76x76" href="{{asset('images/logos/gv2.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('images/logos/gv2.png')}}">
 
 </head>
 
@@ -44,7 +44,7 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html"><img src="images/Logo horizontal mais compacta.png" alt=""></a>
+            <a class="site-logo" href="{{route('indexEUA')}}"><img src="{{asset('images/Logohorizontalmaiscompacta.png')}}" alt=""></a>
         </div>
 
         <nav class="header-nav-wrap">
@@ -55,8 +55,8 @@
                 <li><a class="smoothscroll"  href="#estrutura" title="contact">Structure</a></li>
                 <li><a class="smoothscroll"  href="#gallery" title="contact">Gallery</a></li>
                 <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                <li><a class="smoothscroll"  href="#login" title="contact">Login</a></li>
-                <li><a href="index.html"> <img class="botao-ingles"  src="images\brasil.png"></a><li></li>
+                <li><a class="smoothscroll"  href="https://sistema-academia-laravel.herokuapp.com/login" title="contact">Login</a></li>
+                <li><a href="{{route('index')}}"> <img class="botao-ingles"  src="{{asset('images\brasil.png')}}"></a><li></li>
             </ul>
         </nav>
 
@@ -67,7 +67,7 @@
 
    <!-- home
    ================================================== -->
-   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/bckg.jpg" data-natural-width=8000 data-natural-height=4500 data-position-y=center>
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="{{asset('images/bckg.jpg')}}" data-natural-width=8000 data-natural-height=4500 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -127,7 +127,7 @@
             <div class="row-team">
                 <div class="column">
                     <div class="imgBox">
-                        <img src="images/team/Gustavo.png">
+                        <img src="{{asset('images/team/Gustavo.png')}}">
                     </div>
                     <div class="details">
                         <h3>Gustavo<br><span>Physical Education Professional</span></h3>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="column">
                     <div class="imgBox">
-                        <img src="images/team/Fran.png">
+                        <img src="{{asset('images/team/Fran.png')}}">
                     </div>
                     <div class="details">
                         <h3>Fran<br><span>Physical Education Professional</span></h3>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="column">
                     <div class="imgBox">
-                        <img src="images/team/Elias.png">
+                        <img src="{{asset('images/team/Elias.png')}}">
                     </div>
                     <div class="details">
                         <h3>Elias<br><span>Physical Education Professional</span></h3>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="column">
                     <div class="imgBox">
-                        <img src="images/team/Camila.png">
+                        <img src="{{asset('images/team/Camila.png')}}">
                     </div>
                     <div class="details">
                         <h3>Camila<br><span>Administrator</span></h3>
@@ -315,7 +315,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" target="_blank" title="The Beetle Car" data-size="1050x700">
-                                <img src="images/portfolio/itens-acad.png" alt="">
+                                <img src="{{asset('images/portfolio/itens-acad.png')}}" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -337,7 +337,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" target="_blank" title="Lighthouse" data-size="1050x700">
-                                <img src="images/portfolio/mulher-acad.png" alt="">
+                                <img src="{{asset('images/portfolio/mulher-acad.png')}}" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -359,7 +359,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/degrade2.png"alt="">
+                                <img src="{{asset('images/portfolio/degrade2.png')}}"alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -373,7 +373,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" target="_blank" data-size="1050x700">
-                                <img src="images/portfolio/homem-peso.png" alt="">
+                                <img src="{{asset('images/portfolio/homem-peso.png')}}" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -395,7 +395,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" target="_blank" title="Lighthouse" data-size="1050x700">
-                                <img src="images/portfolio/pesos2.png" alt="">
+                                <img src="{{asset('images/portfolio/pesos2.png')}}" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -417,7 +417,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" target="_blank" title="Lighthouse" data-size="1050x700">
-                                <img src="images/portfolio/pesos.png" alt="">
+                                <img src="{{asset('images/portfolio/pesos.png')}}" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -439,7 +439,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/degrade1.2.png" alt="">
+                                <img src="{{asset('images/portfolio/degrade1.2.png')}}" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -452,7 +452,7 @@
 
                         <div class="item-folio__thumb">
                             <a href="https://www.instagram.com/gv2academia/" target="_blank" data-size="1050x700">
-                                <img src="images/portfolio/pesao.png" alt="">
+                                <img src="{{asset('images/portfolio/pesao.png')}}" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -528,7 +528,7 @@
             <div class="col-full">
 
                 <div class="footer-logo">
-                    <a class="footer-site-logo" href="#0"><img src="images/ICO GV2.ico" alt="Homepage"></a>
+                    <a class="footer-site-logo" href="#0"><img src="{{asset('images/ICOGV2.ico')}}" alt="Homepage"></a>
                 </div>
 
                 <ul class="footer-social">
@@ -612,9 +612,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{asset('js/plugins.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 
