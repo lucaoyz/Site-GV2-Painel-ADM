@@ -53,7 +53,7 @@
                     </div>
 
                     <h4 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Painel Administrativo</h4>
-
+                    <p class="fw-normal mb-3 pb-3">Mesmo endereço de email e senha do sistema</p>
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form2Example17">Endereço de email</label>
                       <input type="email" id="form2Example17" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
