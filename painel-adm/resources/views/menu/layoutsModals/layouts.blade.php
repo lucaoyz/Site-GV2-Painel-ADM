@@ -67,7 +67,7 @@
                 <li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         @csrf
-                        <button type="submit" class="nav-link dropdown-toggle">
+                        <button type="submit" class="nav-link" style="border: 0;">
                             Sair do painel administrativo</button>
                     </form>
                     </li>
