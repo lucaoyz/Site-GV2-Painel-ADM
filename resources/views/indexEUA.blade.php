@@ -129,12 +129,13 @@
     <section class="team">
         <div class="container-team">
             <div class="row-team">
+                @foreach ($membros as $membro)
                 <div class="column">
                     <div class="imgBox">
-                        <img src="{{asset('images/team/Gustavo.png')}}">
+                        <img src="{{asset('images/membros/' . $membro->mem_foto)}}">
                     </div>
                     <div class="details">
-                        <h3>Gustavo<br><span>Physical Education Professional</span></h3>
+                        <h3>{{$membro->mem_nome}}<br><span>{{$membro->mem_cargo}}</span></h3>
                         <ul>
                             <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
@@ -142,45 +143,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="imgBox">
-                        <img src="{{asset('images/team/Fran.png')}}">
-                    </div>
-                    <div class="details">
-                        <h3>Fran<br><span>Physical Education Professional</span></h3>
-                        <ul>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="imgBox">
-                        <img src="{{asset('images/team/Elias.png')}}">
-                    </div>
-                    <div class="details">
-                        <h3>Elias<br><span>Physical Education Professional</span></h3>
-                        <ul>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="imgBox">
-                        <img src="{{asset('images/team/Camila.png')}}">
-                    </div>
-                    <div class="details">
-                        <h3>Camila<br><span>Administrator</span></h3>
-                        <ul>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                @endforeach
                 <div style="clear: both;"></div>
             </div>
         </div>
@@ -200,7 +163,11 @@
             <!-- 1 card -->
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Monthly</h3>
-                <div class="price"> R$99.90<span>/Month</span>
+                <div class="price"> R$ @if ($plano1 === null)
+                    Maintenance.
+                @else
+                    {{$plano1->pl_plano1}}
+                @endif<span>/Month</span>
                 </div>
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Mensal." class="order-btn">Purchase</a>
@@ -209,7 +176,11 @@
             <!-- 2 card -->
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Quarterly</h3>
-                <div class="price"> R$89.90<span>/3x</span>
+                <div class="price"> R$ @if ($plano2 === null)
+                    Maintenance.
+                @else
+                    {{$plano2->pl_plano2}}
+                @endif<span>/3x</span>
                 </div>
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Trimestral." class="order-btn">Purchase</a>
@@ -219,7 +190,11 @@
 
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Semiannual</h3>
-                <div class="price"> R$84.90<span>/6x</span>
+                <div class="price"> R$ @if ($plano3 === null)
+                    Maintenance.
+                @else
+                    {{$plano3->pl_plano3}}
+                @endif<span>/6x</span>
                 </div>
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Semestral." class="order-btn">Purchase</a>
@@ -228,8 +203,13 @@
             <!-- 4th card  -->
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Anual Recurring</h3>
-                <div class="price"> R$79.90<span>/12x</span>
+                <div class="price"> R$ @if ($plano4 === null)
+                    Maintenance.
+                @else
+                    {{$plano4->pl_plano4}}
+                @endif<span>/12x</span>
                 </div>
+
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Anual%20Recorrente." class="order-btn">Purchase</a>
             </div>

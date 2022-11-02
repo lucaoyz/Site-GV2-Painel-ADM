@@ -72,8 +72,8 @@
               <span class="ps-3 text-white">Volte para o sistema!</span>
             </div>
 
-            <a href="https://sistema-academia-laravel.herokuapp.com/login" class="btn btn-icon bg-gradient-primary d-lg-block mt-3 mb-0">
-              Acesse o sistema por aqui
+            <a href="https://sistema-academia-laravel.herokuapp.com/gerencial" class="btn btn-icon bg-gradient-primary d-lg-block mt-3 mb-0">
+              Volte para o sistema por aqui
               <i class="fas fa-arrow-right ms-1"></i>
             </a>
           </div>

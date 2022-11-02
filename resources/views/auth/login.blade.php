@@ -75,7 +75,8 @@
                     </div>
 
                     <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-lg btn-block" type="submit">Entrar</button>
+                      <button class="btn btn-success btn-lg btn-block" type="submit">Entrar</button>
+                      <a href="https://sistema-academia-laravel.herokuapp.com/gerencial" class="btn btn-secondary btn-lg btn-block">Voltar para o sistema</a>
                     </div>
 
                     @if (Route::has('password.request'))
