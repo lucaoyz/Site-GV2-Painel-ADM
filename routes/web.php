@@ -19,3 +19,7 @@ Route::get('/eua', [App\Http\Controllers\IndexController::class, 'indexEUA'])->n
 Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Rotas para alterar planos
+Route::post('/admin/planos/store', [App\Http\Controllers\InformacoesController::class, 'storePlanos'])->name('admin.alterarInfos.storePlanos');
+Route::put('/admin/planos/update', [App\Http\Controllers\InformacoesController::class, 'updatePlanos'])->name('admin.alterarInfos.updatePlanos');

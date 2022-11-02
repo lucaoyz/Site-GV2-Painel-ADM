@@ -201,7 +201,11 @@
             <!-- 1 card -->
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Mensal</h3>
-                <div class="price"> R$99.90<span>/Mês</span>
+                <div class="price"> R$ @if ($plano1 === null)
+                    Sem planos cadastrados.
+                @else
+                    {{$plano1->pl_plano1}}
+                @endif<span>/Mês</span>
                 </div>
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Mensal." class="order-btn">Adquirir</a>
@@ -210,7 +214,11 @@
             <!-- 2 card -->
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Trimestral</h3>
-                <div class="price"> R$89.90<span>/3x</span>
+                <div class="price"> R$ @if ($plano2 === null)
+                    Sem planos cadastrados.
+                @else
+                    {{$plano2->pl_plano2}}
+                @endif<span>/3x</span>
                 </div>
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Trimestral." class="order-btn">Adquirir</a>
@@ -220,7 +228,11 @@
 
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Semestral</h3>
-                <div class="price"> R$84.90<span>/6x</span>
+                <div class="price"> R$ @if ($plano3 === null)
+                    Sem planos cadastrados.
+                @else
+                    {{$plano3->pl_plano3}}
+                @endif<span>/6x</span>
                 </div>
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Semestral." class="order-btn">Adquirir</a>
@@ -229,7 +241,11 @@
             <!-- 4th card  -->
             <div class="pricing-card">
                 <h3 class="pricing-card-header">Anual Recorrente</h3>
-                <div class="price"> R$79.90<span>/12x</span>
+                <div class="price"> R$ @if ($plano4 === null)
+                    Sem planos cadastrados.
+                @else
+                    {{$plano4->pl_plano4}}
+                @endif<span>/12x</span>
                 </div>
 
                 <a href="https://api.whatsapp.com/send?phone=55551936292954&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20adquirir%20o%20plano%20Anual%20Recorrente." class="order-btn">Adquirir</a>

@@ -26,40 +26,24 @@
       </div>
     <div class="col-md-4 mb-4">
       <div class="card shadow-lg">
-        <span class="badge rounded-pill bg-light text-dark w-30 mt-n2 mx-auto">PLANOS</span>
+        <span class="badge rounded-pill bg-light text-dark w-30 mt-n2 mx-auto">ALTERAR</span>
         <div class="card-header text-center pt-4 pb-3">
         </div>
         <div class="card-body text-lg-start text-center pt-0">
           <div class="d-flex justify-content-lg-start justify-content-center p-2">
             <i class="material-icons my-auto">remove</i>
-            <span class="ps-3">Plano mensal:
-                Sem planos cadastrados.
+            <span class="ps-3">Alterar planos do site
             </span>
           </div>
 
           <div class="d-flex justify-content-lg-start justify-content-center p-2">
             <i class="material-icons my-auto">remove</i>
-            <span class="ps-3">Plano trimestral:
-                Sem planos cadastrados.
+            <span class="ps-3">Alterar equipe do site
             </span>
           </div>
 
-          <div class="d-flex justify-content-lg-start justify-content-center p-2">
-            <i class="material-icons my-auto">remove</i>
-            <span class="ps-3">Plano semestral:
-                Sem planos cadastrados.
-            </span>
-          </div>
-
-          <div class="d-flex justify-content-lg-start justify-content-center p-2">
-            <i class="material-icons my-auto">remove</i>
-            <span class="ps-3">Plano anual recorrente:
-                Sem planos cadastrados.
-            </span>
-          </div>
-
-          <a data-bs-toggle="modal" data-bs-target="#alterarPlanos" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0">
-            Alterar Planos
+          <a data-bs-toggle="modal" data-bs-target="#alterarSite" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0">
+            Alterar Site
             <i class="fas fa-arrow-right ms-1"></i>
           </a>
         </div>
@@ -84,5 +68,8 @@
         </div>
       </div>
   </div>
+
+    <!-- Modal -->
+    @include('menu.layoutsModals.modalsSite')
 
 @endsection
