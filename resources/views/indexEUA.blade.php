@@ -486,7 +486,7 @@
                 Whatsapp: (19) 3629-2954<br>
                 </p>
 
-                <h4 class="h06">Email</h4>
+                <h4 class="h06">E-mail</h4>
                 <p>gv2academia@gmail.com<br>
                 </p>
 
