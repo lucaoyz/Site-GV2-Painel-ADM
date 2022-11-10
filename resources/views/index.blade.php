@@ -513,7 +513,7 @@
             <div class="col-full">
 
                 <div class="footer-logo">
-                    <a class="footer-site-logo" href="#0"><img src="{{asset('images/ICOGV2.ico')}}" alt="Homepage"></a>
+                    <a class="footer-site-logo" href="#0"><img src="{{asset('images/logos/Logo_com_tagline.png')}}" alt="Homepage"></a>
                 </div>
 
                 <ul class="footer-social">
