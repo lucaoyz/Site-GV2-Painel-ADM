@@ -61,24 +61,6 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-4">
-        <div class="card bg-gradient-dark shadow-lg">
-          <span class="badge rounded-pill bg-primary w-40 mt-n2 mx-auto">Sistema</span>
-          <div class="card-header text-center pt-4 pb-3 bg-transparent">
-          </div>
-          <div class="card-body text-lg-start text-center pt-0">
-            <div class="d-flex justify-content-lg-start justify-content-center p-2">
-
-              <span class="ps-3 text-white">Volte para o sistema!</span>
-            </div>
-
-            <a href="https://sistema-academia-laravel.herokuapp.com/gerencial" class="btn btn-icon bg-gradient-primary d-lg-block mt-3 mb-0">
-              Volte para o sistema por aqui
-              <i class="fas fa-arrow-right ms-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
   </div>
 
     <!-- Modal -->
