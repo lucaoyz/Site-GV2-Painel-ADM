@@ -58,7 +58,7 @@
                 @if(auth::check())
                 <li><a class="smoothscroll"  href="{{route('home')}}" title="contact">Admin</a></li>
                 @else
-                <li><a class="smoothscroll"  href="https://sistema-academia-laravel.herokuapp.com/login" title="contact">Login</a></li>
+                <li><a class="smoothscroll"  href="{{route('login')}}" title="contact">Login</a></li>
                 @endif
                 <li><a href="{{route('indexEUA')}}"> <img class="botao-ingles"  src="{{asset('images/eua.png')}}"></a><li></li>
             </ul>

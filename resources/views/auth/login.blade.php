@@ -53,7 +53,7 @@
                     </div>
 
                     <h4 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Painel Administrativo</h4>
-                    <p class="fw-normal mb-3 pb-3">Mesmo endereço de email e senha do sistema</p>
+                    <p class="fw-normal mb-3 pb-3">Acesse o painel administrativo para alterar as informações do site!</p>
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form2Example17">Endereço de email</label>
                       <input type="email" id="form2Example17" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
@@ -76,7 +76,7 @@
 
                     <div class="pt-1 mb-4">
                       <button class="btn btn-success btn-lg btn-block" type="submit">Entrar</button>
-                      <a href="https://sistema-academia-laravel.herokuapp.com/gerencial" class="btn btn-secondary btn-lg btn-block">Voltar para o sistema</a>
+                      <a href="{{route('index')}}" class="btn btn-secondary btn-lg btn-block">Voltar para o site</a>
                     </div>
 
                     @if (Route::has('password.request'))
